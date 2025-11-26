@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+sqlalchemy
+alembic
+pydantic
+asyncpg
+psycopg2-binary
+python-jose
+passlib[bcrypt]
+pytz
+# pin bcrypt to a 3.x release compatible with passlib 1.7.x
+bcrypt<4
+pydantic[email]
+email-validator
+

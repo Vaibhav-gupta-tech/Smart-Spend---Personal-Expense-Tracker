@@ -1,0 +1,89 @@
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+*.sqlite3
+
+# FastAPI / Uvicorn
+*.log
+
+# -----------------------------
+# Alembic
+# -----------------------------
+alembic/versions/*.pyc
+alembic/__pycache__/
+alembic/versions/__pycache__/
+
+# DO NOT ignore migration files:
+# alembic/versions/*.py   <-- keep .py files for migrations
+
+# -----------------------------
+# Environment Files
+# -----------------------------
+.env
+.env.*
+*.env
+
+# Config
+*.ini.local
+config/*.local
+
+# -----------------------------
+# Docker
+# -----------------------------
+docker-data/
+docker-compose.override.yml
+
+# Container volumes
+data/
+db_data/
+postgres-data/
+
+# -----------------------------
+# Node / Next.js (Frontend)
+# -----------------------------
+node_modules/
+npm-debug.log
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
+.next/
+out/
+coverage/
+
+# Local environment
+*.local
+
+# -----------------------------
+# OS / Editor Files
+# -----------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+*.code-workspace
+
+# -----------------------------
+# Lock files (optional)
+# -----------------------------
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
