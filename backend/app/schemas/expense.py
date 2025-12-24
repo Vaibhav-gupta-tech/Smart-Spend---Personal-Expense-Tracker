@@ -20,5 +20,6 @@ class ExpenseOut(BaseModel):
     description: Optional[str] = None
     created_at: datetime
 
-    class Config:
-        orm_mode = True
+    # Pydantic v2 renamed `orm_mode` -> `from_attributes` and moved config to `model_config`.
+    # This sets the model to read data from ORM objects' attributes when returning responses.
+    model_config = {"from_attributes": True}
